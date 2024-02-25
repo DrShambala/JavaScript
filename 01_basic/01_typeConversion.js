@@ -56,9 +56,10 @@ console.log(val ,negVal);
 let str1= 'Hello'
 let str2= ' Javascript'
 console.log(str1+str2);
-// console.log(str1-str2);
+// console.log(str1-str2);  // OUTPUT: NaN
 
 // js automatically convert datatypes if necessary 
+// use the code below to understand conversion
 // console.log(1+'2');
 // console.log('1'+2);
 // console.log('1'+2+2);
