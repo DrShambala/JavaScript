@@ -1,16 +1,44 @@
-let userName='adarsh'   //string
+// types of data type of JS
+// PRIMITIVE DATATYPE
+// String, Number, null, undefined, boolean, bigInt, symbol
 
-let age=49  //numbers
+console.log('PRIMITIVE DATATYPE');
+let userName= 'name@123'
+console.log(typeof userName);
 
-let loggin = false  //boolean
+let age = 18
+console.log(typeof age);
 
-// bigInt => for number very big numbers
-// null => stand alone value
-// undefined => value of var is not assign
-// symbols => uniqe
+let temperature= null
+console.log(typeof temperature);
 
-// console.log(typeof userName);
+let unknownVar;
+console.log(typeof unknownVar);
 
-console.table([typeof userName, typeof age, typeof loggin, typeof null, typeof undefined])
+let isLoggedIn= true
+console.log(typeof isLoggedIn);
 
-// null is shown as object
+let bigNum= 4752934875934875934785983745n
+console.log(typeof bigNum);
+
+console.log('NON PRIMITIVE DATATYPE');
+//  NON PRIMITIVE DATATYPE
+// array, Object, function
+
+let months= ['january','february','march','aprail']
+console.log(typeof months);
+
+let myObj= {
+    user: 'name',
+    age: 29,
+    LoggedIn: false
+}
+console.log(typeof myObj);
+
+function myFunc() {
+    console.log('HELLO JAVASCRIPT');
+}
+console.log(typeof myFunc);
+
+
+// According to ECMA standards datatype of array, object and null is shown as OBJECT 
