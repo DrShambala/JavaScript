@@ -24,3 +24,5 @@ const myArr=[1,2,3,4,5,6]
 // console.log(newArr);
 // console.log(typeof newArr);
 
+const anotherArr= myArr.slice(1,3)
+console.log(anotherArr);
