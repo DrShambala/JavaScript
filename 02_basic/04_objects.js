@@ -3,7 +3,7 @@ const myObj = new Object()    // this is a singleton object
 const yourObj  = {}         // this is a non singleton object
 
 yourObj.id = 'name1212'
-yourObj.name  = 'name'
+yourObj.name  = "someone's name"
 yourObj.isLoggedIn = true
 
 // console.log(yourObj);
@@ -19,3 +19,11 @@ const obj3 = {5:'A',6:'B'}
 // const finalObj = {...obj1,...obj2,...obj3}
 // console.log(finalObj);
 
+
+// methods to call out a property of object
+
+// console.log(yourObj.name);
+// another method
+const {isLoggedIn : login} = yourObj
+// console.log(isLoggedIn);
+console.log(login);
