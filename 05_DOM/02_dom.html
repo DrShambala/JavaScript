@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom 2</title>
+</head>
+<style>
+    body{
+        background: #181818;
+        color: white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+</style>
+<body>
+    <ul class="lang">
+        <li>javascript</li>
+    </ul>
+
+    <script>
+        function addLang(langNam){
+            const myLI = document.createElement('li');
+            myLI.innerHTML = `${langNam}`
+            document.querySelector('.lang').appendChild(myLI)
+        }
+        
+        addLang('ruby')
+        addLang('python')
+        
+        function optimisedApproch(params) {
+            const mylist = document.createElement('li')
+            mylist.appendChild(document.createTextNode(params))
+            document.querySelector('.lang').appendChild(mylist)
+        }
+
+        optimisedApproch('golang')
+        optimisedApproch('java')
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++ EDIT
+
+        const listItem = document.querySelector('li')
+        // listItem.innerHTML = 'MOJO_jojo'
+        const newLI = document.createElement('li')
+        newLI.innerText = 'haBhai'
+        listItem.replaceWith(newLI)
+
+//  ================================================remove
+
+        const lastLang = document.querySelector('li:last-child')
+        lastLang.remove()
+
+
+    </script>
+</body>
+</html>
