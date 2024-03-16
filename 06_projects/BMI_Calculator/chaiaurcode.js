@@ -15,10 +15,5 @@ form.addEventListener('submit',function (eObj){
     }
     else{
         result.textContent = (height*height)/10000
-
     }
-
-
-
-
 })
