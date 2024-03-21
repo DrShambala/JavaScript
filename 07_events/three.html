@@ -15,13 +15,13 @@
         const sayMyName = function(work){
             console.log(work,Date.now());
         }
-        const stopTheInterval = setInterval(sayMyName, 1000,'abc');
-        document.querySelector('#stop').addEventListener('click',function(){
-            clearInterval(stopTheInterval)
-        })
         document.querySelector('#start').addEventListener('click',function(){
-            clearInterval(stopTheInterval)
+            const TheInterval = setInterval(sayMyName, 1000,'abc');
+            document.querySelector('#stop').addEventListener('click',function(){
+                clearInterval(TheInterval)
+            })
         })
+
     </script>
 </body>
 </html>

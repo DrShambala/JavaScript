@@ -1,9 +1,8 @@
-// const arr = [-3,-2,-1,0,1, 2, 3, 4, 5]
+const arr = [-3,-2,-1,0,1, 2, 3, 4, 5]
 
-// for (const iterator of arr) {
-//     console.log(iterator);
-// }
-
+for (const iterator of arr) {
+    console.log(iterator);
+}
 
 // const greetings = "Hello world!"
 // for (const greet of greetings) {
@@ -15,12 +14,12 @@
 // }
 
 
-// MAP
-const myMap = new Map()
-myMap.set('dualist','rage')
-myMap.set('healer','sage')
-myMap.set('tracker','sova')
-myMap.set('dualist','rage')
+// // MAP
+// const myMap = new Map()
+// myMap.set('dualist','rage')
+// myMap.set('healer','sage')
+// myMap.set('tracker','sova')
+// myMap.set('dualist','rage')
 
 // console.log(myMap);
 
