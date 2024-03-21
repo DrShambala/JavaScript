@@ -2,7 +2,7 @@
 const randomNum = parseInt((Math.random())*10+1)
 const inputValue = document.querySelector('#guessField')
 const sbmtBtn = document.querySelector('#subt')
-const prevGuesses = document.querySelector('.guesses').innerHTML
+const prevGuesses = document.querySelector('.guesses')
 const remainingGuss = document.querySelector('.lastResult')
 const lowOrHi = document.querySelector('.lowOrHi')
 
@@ -43,7 +43,7 @@ function checkNumber(num){
         remainingGuss.innerHTML = remainingGusses
         console.log(`${remainingGusses} and random num is ${randomNum}`);
         previousGuess.push(num)    
-        prevGuesses.innerHTML = 'akkad bakkad'    
+        prevGuesses.innerHTML = previousGuess   
         if(num < randomNum){
             displayMessage('your number is Too low ')
         }else{
