@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>second chapter</title>
+</head>
+<body>
+    <h1>JAVASCRIPT
+    </h1>
+    <script>
+        // setTimeout(function(){
+        //     console.log('adarsh');
+        // },2000)
+       
+
+
+        const sayMyName = function(){
+            console.log('Adarsh');
+        }
+        const sayMyNameTimeout =  setTimeout(sayMyName,2000)
+        
+        const text = function(){
+            document.querySelector('h1').innerHTML = 'typescript'
+        }
+        const timeout1 = setTimeout(text,2000)
+
+        // clearTimeout(sayMyNameTimeout)
+        clearTimeout(timeout1)
+
+    </script>
+</body>
+</html>

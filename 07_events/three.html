@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>third chapter</title>
+</head>
+<body>
+    <h1>chai aur sketch
+    </h1>
+    <button id="start">start</button>
+    <button id="stop">stop</button>
+    <script>
+
+        const sayMyName = function(work){
+            console.log(work,Date.now());
+        }
+        const stopTheInterval = setInterval(sayMyName, 1000,'abc');
+        document.querySelector('#stop').addEventListener('click',function(){
+            clearInterval(stopTheInterval)
+        })
+        document.querySelector('#start').addEventListener('click',function(){
+            clearInterval(stopTheInterval)
+        })
+    </script>
+</body>
+</html>
