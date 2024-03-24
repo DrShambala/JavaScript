@@ -1,3 +1,5 @@
+// this loops are different in syntax but work same
+
 const arr = [-3,-2,-1,0,1, 2, 3, 4, 5]
 
 for (const iterator of arr) {
